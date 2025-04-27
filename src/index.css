@@ -37,3 +37,11 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+select {
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: none;
+  background-color: var(--background);
+}
