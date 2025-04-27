@@ -1,0 +1,31 @@
+.modal {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #666;
+  /* opacity: 0.5; */
+
+  .modal-content {
+    opacity: 1;
+    background-color: #f9f9f9;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    min-width: 800px;
+    min-height: 100px;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding: 16px;
+  }
+}
