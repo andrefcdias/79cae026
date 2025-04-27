@@ -15,7 +15,7 @@ export const Modal = ({ title, onClose, children }: ModalProps) => {
         </div>
         {children}
       </div>
-      <div className="modal-background"></div>
+      <div className="modal-background" onClick={onClose} />
     </div>
   );
 };

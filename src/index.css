@@ -45,3 +45,12 @@ select {
   box-shadow: none;
   background-color: var(--background);
 }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
