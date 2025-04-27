@@ -13,7 +13,12 @@ export const Modal = ({ title, onClose, children }: ModalProps) => {
           <h1 className="modal-header-title">{title}</h1>
           <button onClick={onClose}>x</button>
         </div>
-        {children}
+        <div className="modal-main-content">
+          {children}
+          <div className="modal-footer">
+            <button onClick={onClose}>Schließen</button>
+          </div>
+        </div>
       </div>
       <div className="modal-background" onClick={onClose} />
     </div>
