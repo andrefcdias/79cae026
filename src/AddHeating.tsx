@@ -26,6 +26,8 @@ function App() {
           </select>
           <button className="link">Heizkreis hinzufügen</button>
           <FormGroup title="Flachheizkörper" />
+          <FormGroup title="Stahl- / Gussradiator" />
+          <FormGroup title="Rohr- / Gussradiator" />
         </Modal>
       )}
       <Assistant />
