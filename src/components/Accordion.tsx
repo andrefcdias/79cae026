@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "./Accordion.css";
-import { BsChevronDown, BsChevronRight } from "react-icons/bs";
+import {
+  BsChevronDown,
+  BsChevronRight,
+  BsInfo,
+  BsInfoSquareFill,
+} from "react-icons/bs";
 
 type AccordionProps = {
   open?: boolean;
@@ -18,7 +23,10 @@ export const Accordion = ({ open, title, children }: AccordionProps) => {
     <div className="accordion">
       <button className="accordion-button" onClick={handleToggle}>
         {internalOpen ? <BsChevronDown /> : <BsChevronRight />}
-        <h2>{title}</h2>
+        <h2 className="accordion-header">
+          {title}
+          <BsInfoSquareFill size={16} className="info" />
+        </h2>
       </button>
       <div className={`accordion-content ${internalOpen && "open"}`}>
         {children}

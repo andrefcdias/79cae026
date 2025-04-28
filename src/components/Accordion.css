@@ -3,6 +3,17 @@
   border-bottom: 1px solid #ccc;
 }
 
+.accordion-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.info {
+  color: rgb(75, 75, 75);
+}
+
 .accordion-button {
   display: flex;
   justify-content: start;
