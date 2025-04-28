@@ -1,6 +1,12 @@
 # Design engineering example
 
-## Structure
+## Part 1
+[src/AddHeating.tsx](src/AddHeating.tsx) + [src/components/Modal.tsx](src/components/Modal.tsx)
 
-- Part 1 - src/AddHeating.tsx + src/components/Modal.tsx
-- Part 2 - src/components/Assistant.tsx
+![modal demonstration](screenshots/modal.png)
+
+## Part 2
+
+[src/components/Assistant.tsx](src/components/Assistant.tsx)
+
+![ai assistant demonstration](screenshots/ai.png)
