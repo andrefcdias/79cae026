@@ -2,7 +2,7 @@
   --border: #cfcfcf;
   --background: #f9f9f9;
   --radius: 8px;
-  --primary-color: #5865f2;
+  --primary-color: #544fb7;
 
   margin: 0 auto;
   padding: 2rem;
@@ -45,7 +45,7 @@ button.primary {
 button.link {
   padding: 0;
   border: none;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--primary-color);
 }
 button.link:hover {
