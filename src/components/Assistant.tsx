@@ -14,6 +14,7 @@ export const Assistant = () => {
   const [assistantOpen, setAssistantOpen] = useState(false);
   const [chats, setChats] = useState([] as Chat[]);
   const chatRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const handleOpenAssistant = () => {
     setAssistantOpen(true);
@@ -26,7 +27,9 @@ export const Assistant = () => {
   const handleQuerySubmit = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
       const query = (event.target as HTMLInputElement).value;
-      console.log("logged", chats);
+      if (inputRef.current!) {
+        inputRef.current.value = "";
+      }
 
       setChats((currentChats) =>
         currentChats.concat({ sender: "user", text: query })
@@ -92,7 +95,11 @@ export const Assistant = () => {
               </>
             ))}
           </div>
-          <input className="assistant-query" onKeyUp={handleQuerySubmit} />
+          <input
+            ref={inputRef}
+            className="assistant-query"
+            onKeyUp={handleQuerySubmit}
+          />
         </div>
       )}
       <button className="assistant-trigger" onClick={handleOpenAssistant}>
