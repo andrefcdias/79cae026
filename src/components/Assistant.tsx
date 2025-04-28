@@ -1,10 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./Assistant.css";
 
-const FancyLoader = () => {
-  return <div className="fancy-loader"></div>;
-};
-
 type Chat = {
   sender: "user" | "assistant" | "loading";
   text: string;
@@ -59,6 +55,12 @@ export const Assistant = () => {
       }, 200);
     }
   };
+
+  useEffect(() => {
+    if (assistantOpen) {
+      inputRef.current?.focus();
+    }
+  }, [assistantOpen]);
 
   useEffect(() => {
     chatRef.current?.scrollBy({
