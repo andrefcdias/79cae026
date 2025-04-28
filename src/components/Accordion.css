@@ -1,0 +1,26 @@
+.accordion {
+  width: 100%;
+  margin: 8px 4px;
+}
+
+.accordion-button {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+  flex-direction: row;
+  width: inherit;
+  border: none;
+  padding-left: 12px;
+}
+
+.accordion-content {
+  display: none;
+  margin: 16px;
+  gap: 32px;
+  max-width: 320px;
+}
+.accordion-content.open {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,4 +1,5 @@
 import "./Modal.css";
+import { BsX } from "react-icons/bs";
 
 type ModalProps = {
   title: string;
@@ -11,7 +12,9 @@ export const Modal = ({ title, onClose, children }: ModalProps) => {
       <div className="modal-content">
         <div className="modal-header">
           <h1 className="modal-header-title">{title}</h1>
-          <button onClick={onClose}>x</button>
+          <button className="raw" onClick={onClose}>
+            <BsX size={32} />
+          </button>
         </div>
         <div className="modal-main-content">
           {children}

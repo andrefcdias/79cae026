@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./AddHeating.css";
 import { Modal } from "./components/Modal";
 import { Assistant } from "./components/Assistant";
+import { FormGroup } from "./FormGroup";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -24,6 +25,7 @@ function App() {
             <option>Heating circuit 1</option>
           </select>
           <button className="link">Heizkreis hinzufügen</button>
+          <FormGroup title="Flachheizkörper" />
         </Modal>
       )}
       <Assistant />

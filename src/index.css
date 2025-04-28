@@ -2,7 +2,7 @@
   --border: #cfcfcf;
   --background: #f9f9f9;
   --radius: 8px;
-  --primary-color: #544fb7;
+  --primary-color: #5755d5;
 
   margin: 0 auto;
   padding: 2rem;
@@ -24,8 +24,14 @@ h1 {
   font-weight: 400;
 }
 
+h2 {
+  font-size: 1.2em;
+  line-height: 1;
+  font-weight: 500;
+}
+
 button {
-  padding: 0.4em 0.8em;
+  padding: 4px 8px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   font-size: 1em;
@@ -39,13 +45,20 @@ button:hover {
   background-color: #eee;
 }
 button.primary {
+  height: 36px;
   color: #f9f9f9;
-  background-color: #373f97;
+  background-color: var(--primary-color);
+}
+button.raw {
+  padding: 4px;
+  border: none;
+  color: #666;
 }
 button.link {
   padding: 0;
   border: none;
   font-weight: 700;
+  margin: 4px 0;
   color: var(--primary-color);
 }
 button.link:hover {
@@ -60,8 +73,10 @@ label {
 }
 select {
   width: 100%;
-  max-width: 200px;
-  height: 40px;
+  max-width: 300px;
+}
+select,
+input[type="number"] {
   padding: 8px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
