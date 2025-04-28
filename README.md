@@ -9,4 +9,4 @@
 
 [src/components/Assistant.tsx](src/components/Assistant.tsx)
 
-![ai assistant demonstration](screenshots/ai.png)
+![ai assistant demonstration](screenshots/ai.gif)
