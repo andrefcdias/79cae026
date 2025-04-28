@@ -23,6 +23,18 @@
   height: 24px;
 }
 
+.show-more {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: black;
+  border: 0;
+  font-weight: 500;
+}
+
 .add {
   display: flex;
   flex-direction: row;

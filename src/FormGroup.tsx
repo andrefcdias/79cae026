@@ -1,5 +1,5 @@
 import { Accordion } from "./components/Accordion";
-import { BsPlus } from "react-icons/bs";
+import { BsChevronDown, BsPlus } from "react-icons/bs";
 import "./FormGroup.css";
 
 type FormGroupProps = {
@@ -28,7 +28,11 @@ export const FormGroup = ({ title }: FormGroupProps) => {
             <label htmlFor="länge">Länge (mm)</label>
             <input id="länge" type="number" placeholder="Eingabe" />
           </div>
-        </div>
+      </div>
+        <button className="show-more">
+          Show more
+          <BsChevronDown size={16} />
+        </button>
         <button className="primary add">
           <BsPlus size={24} />
           Hinzufügen
