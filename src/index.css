@@ -1,6 +1,7 @@
 :root {
   --border: #cfcfcf;
-  --background: #ffffff;
+  --background: #f9f9f9;
+  --radius: 8px;
 
   margin: 0 auto;
   padding: 2rem;
@@ -23,22 +24,15 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: var(--radius);
   border: 1px solid var(--border);
   padding: 0.4em 0.8em;
   font-size: 1em;
   font-weight: 400;
   font-family: inherit;
-  background-color: #f9f9f9;
+  background-color: var(--background);
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #cfcfcf;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 button.primary {
   color: #f9f9f9;
@@ -60,7 +54,7 @@ select {
   width: 100%;
   max-width: 200px;
   height: 40px;
-  border-radius: 8px;
+  border-radius: var(--radius);
   padding: 8px;
   border: 1px solid var(--border);
   box-shadow: none;

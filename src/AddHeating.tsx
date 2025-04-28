@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./AddHeating.css";
 import { Modal } from "./components/Modal";
+import { Assistant } from "./components/Assistant";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -25,6 +26,7 @@ function App() {
           <button className="link">Heizkreis hinzufügen</button>
         </Modal>
       )}
+      <Assistant />
     </>
   );
 }
